@@ -17,9 +17,10 @@ Uart::Uart() {
   #endif
 }
 
-void Uart::write(uint8_t data[], uint8_t size) {
+uint8_t Uart::write(uint8_t data[], uint8_t size) {
   for(uint8_t i = 0; i < size; ++i) {
     while (!(UCSR0A & (1<<UDRE0)));
     UDR0 = data[i];
   }
+  return 0;
 }

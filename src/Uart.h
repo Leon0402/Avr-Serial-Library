@@ -7,11 +7,11 @@
   #define BAUD 9600
 #endif
 
-class Uart : private Serial {
+class Uart : public Serial {
 
 public:
   Uart();
 
-  void write(uint8_t data[], uint8_t size) override;
+  uint8_t write(uint8_t data[], uint8_t size) override;
 };
 #endif //UART_H

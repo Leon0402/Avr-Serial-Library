@@ -6,7 +6,7 @@
 class Serial {
 
 public:
-  virtual void write(uint8_t data[], uint8_t size) = 0;
+  virtual uint8_t write(uint8_t data[], uint8_t size) = 0;
 };
 
 #endif //SERIAL_H
