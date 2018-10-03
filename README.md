@@ -4,11 +4,13 @@ Serial Library for Arduino/avr.
 
 ### Current Status
 
-* Project started
+* considered as not usable at the moment
 
-### Latest Changed
+### Latest Changes
 
-* No Changes
+* Implemented first version of Serial Interface
+* Implemented first version of uart
+* Implementer first version of i2c
 
 ### Features
 
